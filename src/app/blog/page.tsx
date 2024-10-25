@@ -1,7 +1,7 @@
 "use client";
 import PostCards from '@/components/TopNav/PostCards/PostCards';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+
 
 interface Post {
   userId: number;

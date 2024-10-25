@@ -1,6 +1,16 @@
 import React from 'react';
 
-export default function Comments({ commentData }: any) {
+interface CommentData {
+  name: string;
+  email: string;
+  body: string;
+}
+
+interface CommentsProps {
+  commentData: CommentData;
+}
+
+export default function Comments({ commentData }: CommentsProps) {
   return (
     <div className="bg-gray-100 p-4">
       <div className="max-w-full mx-auto bg-white shadow-lg rounded-lg my-2 p-4">
